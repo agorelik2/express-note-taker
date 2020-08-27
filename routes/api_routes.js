@@ -12,10 +12,30 @@ module.exports = (app) => {
   });
 
   app.post("/api/notes", (req, res) => {
-    let noteId = uuidv4();
-    let newNote = {
+    const noteId = uuidv4();
+    const newNote = {
       title: req.body.title,
       text: req.body.text,
       id: noteId,
     };
+    fs.readFile("./db/db.json", "utf-8", (error, noteData) => {
+      console.log("Test");
+      if (error) {
+        return console.log(`this is a line 24 ${error}`);
+      }
+
+      const notesArray = JSON.parse(noteData);
+      notesArray.push(newNote);
+      fs.writeFile(
+        "./db/db.json",
+        JSON.stringify(notesArray, null, 2),
+        (err) => {
+          if (err) throw err;
+
+          res.send(notesArray);
+          console.log(notesArray, "Successfully wrote file");
+        }
+      );
+    });
+  });
 };
