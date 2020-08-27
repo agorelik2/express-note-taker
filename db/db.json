@@ -4,13 +4,23 @@
     "text": "Test text"
   },
   {
-    "title": "My first note",
-    "text": "got to sleep",
-    "id": "1e90119f-b64b-42b2-bcf2-67856d871cc9"
+    "title": "Another note",
+    "text": "how are you doing?",
+    "id": "60c82d95-c651-4fd2-a463-0ff303eb2122"
   },
   {
-    "title": "My second note",
-    "text": "take a rest",
-    "id": "09651d8c-4a44-45f6-bde0-32756394cad3"
+    "title": "New note number 6",
+    "text": "enjoy the rest of your day!!!\n",
+    "id": "85145222-94f0-4943-8fe3-0164d720f2a9"
+  },
+  {
+    "title": "New note number 15",
+    "text": "Hope your tomorrow is going to get better!",
+    "id": "10b69c8c-5754-4c4a-9097-1cfd1f5d1794"
+  },
+  {
+    "title": "Note to the people",
+    "text": "Have a good day!",
+    "id": "d9f1d180-1eff-41e1-b191-029feb303d60"
   }
 ]
