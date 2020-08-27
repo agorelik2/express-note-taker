@@ -35,6 +35,10 @@ This application is a task tracker. In the browser, type a task with details, th
 
 Install the following NPM Packages: express, util, and uuid (unique ID generator).
 
+## Link to the Deployed App
+
+https://express-note-taker-2020.herokuapp.com/
+
 ## Link to GitHub Page
 
 https://github.com/agorelik2/express-note-taker
