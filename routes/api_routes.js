@@ -38,4 +38,20 @@ module.exports = (app) => {
       );
     });
   });
+
+  app.delete("/api/notes/:id", (req, res) => {
+    const noteId = req.params.id;
+    fs.readFile("./db/db.json", "utf-8", (error, noteData) => {
+      const notesArray = JSON.parse(noteData);
+      const updatedNoteData = notesArray.filter((note) => note.id != noteId);
+      fs.writeFile(
+        "./db/db.json",
+        JSON.stringify(updatedNoteData, null, 2),
+        (err) => {
+          if (err) throw err;
+          res.send(updatedNoteData);
+        }
+      );
+    });
+  });
 };

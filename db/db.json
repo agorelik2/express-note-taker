@@ -1,1 +1,16 @@
-[{"title":"Test Title","text":"Test text"}]
+[
+  {
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "title": "My first note",
+    "text": "got to sleep",
+    "id": "1e90119f-b64b-42b2-bcf2-67856d871cc9"
+  },
+  {
+    "title": "My second note",
+    "text": "take a rest",
+    "id": "09651d8c-4a44-45f6-bde0-32756394cad3"
+  }
+]
